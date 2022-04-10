@@ -55,7 +55,7 @@ The third phase of this project involved individually modifying the Chatbot to n
 The APIs chosen to be implemented were the Google Translate API as well as the Wikipedia API.
 
 The Google Translate API enables the user to enter any String, and the Chatbot will return the translation.
-The Wikipedia API enables the Chatbot to return any Wikipedia Description (within this implementation, the descriptions are focused on user specficied locations).
+The Wikipedia API enables the Chatbot to return any Wikipedia Description (within this implementation, the descriptions are focused on user specified locations).
 
 Both API's functionalities will be further discussed within the documentation file as well as demonstrated within this phase's video.
 
