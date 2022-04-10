@@ -50,12 +50,12 @@ Regarding the code, the features we decided to apply included: creating a graphi
 
 ## Project Phase 3
 
-The third phase of this project involved individually modifying the Chatbot to now include two APIs. The purpose of integrating APIs was to enable the Chatbot to process real-world data and incorpoate it into conversation. Therefore, furthering the dynamic range of conversation as well as reducing the feel of an automated script. 
+The third phase of this project involved individually modifying the Chatbot to now include two APIs. The purpose of integrating APIs was to enable the Chatbot to process real-world data and incorporate it into conversation. Therefore, furthering the dynamic range of conversation as well as reducing the feel of an automated script. 
 
 The APIs chosen to be implemented were the Google Translate API as well as the Wikipedia API.
 
 The Google Translate API enables the user to enter any String, and the Chatbot will return the translation.
-The Wikipedia API enables the Chatbot to return any Wikipedia Description (within this implementation, the descriptions are focused on user specficied locations).
+The Wikipedia API enables the Chatbot to return any Wikipedia Description (within this implementation, the descriptions are focused on user specified locations).
 
 Both API's functionalities will be further discussed within the documentation file as well as demonstrated within this phase's video.
 
