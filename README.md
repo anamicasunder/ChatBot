@@ -57,6 +57,6 @@ The APIs chosen to be implemented were the Google Translate API as well as the W
 The Google Translate API enables the user to enter any String, and the Chatbot will return the translation.
 The Wikipedia API enables the Chatbot to return any Wikipedia Description (within this implementation, the descriptions are focused on user specficied locations).
 
-Both API's functionalities will be further discussed within the documentation file as well as demonstrated within this Phase's video.
+Both API's functionalities will be further discussed within the documentation file as well as demonstrated within this phase's video.
 
-Additinally, although this project was completed individually, the SDLC cycle followed mainly remained the same.
+Additionally, although this project was completed individually, the SDLC cycle followed mainly remained the same.
