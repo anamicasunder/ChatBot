@@ -1,9 +1,8 @@
-# ChatBot
-ChatBot for Assignment 2
+## ChatBot
 
+# Project Phase 1:
 
 Project Description:
-
 
 The objective of this programming project is to practice team collaboration and management principles within a software engineering environment – through the creation of an interactive program. The program’s aim is to create a dynamic conversational agent that is able to interact and respond to a user’s input. Within our chosen setup, the agent will imitate an old friend and enable the user to participate in conversations centering around topics such as favourite food, hobbies, and books. The project will be completed using project management tools such as JIRA and employ Java as the object-oriented programming language.
 
@@ -46,6 +45,13 @@ SDLC Breakdown:
         ○ Peer Evaluation: submit a peer evaluation for all team members
         ○ Project Submission: submit the finalized project on Canvas
 
-Within our second iteration of the project, we decided to follow the same SDLC work cycle, with minor changes. The reasoning behind this is we found the new project requirements were similar to the last, and since our life cycle worked effectively for us last time, it was in our best interest to use it again.  
+# Project Phase 2
 
-The WBS and Explanation are included within their own file in the Github Repository
+The second phase of this project focused on improving our already formed code, and adding features that would enhance the functionality of our Chatbot.
+In terms of the project management structures we used to guide us, we decided to follow the same SDLC work cycle, with minor changes. This is because we found the second iteration of the project to put forward similar requirements as the first. Therefore, since our life cycle worked effectively for us last time, it was in our best interest to use it again. Additionally, as this was now our third time working together, it was easy to maintain and perfect the agile process we had been implementing until now.
+
+Regarding the code, the features we decided to apply included: creating a graphical user interface, importing and integrating POS Tagging & Named Entity Recognition Toolkits, as well as configuring the Chatbot to be able to interact with other agents. The reason behind why we picked these aspects was because we had the goal to improve our Chatbot to the point where it could really emulate the feeling of talking to a friend; and found this was our way to  do so.
+
+# Project Phase 3
+
+The third phase of this project was to modify the Chatbot we had created as a group, however this time, the changes were to be done individually. 
