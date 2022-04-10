@@ -1,13 +1,10 @@
 ## ChatBot
 
-# Project Phase 1:
-
 Project Description:
 
 The objective of this programming project is to practice team collaboration and management principles within a software engineering environment – through the creation of an interactive program. The program’s aim is to create a dynamic conversational agent that is able to interact and respond to a user’s input. Within our chosen setup, the agent will imitate an old friend and enable the user to participate in conversations centering around topics such as favourite food, hobbies, and books. The project will be completed using project management tools such as JIRA and employ Java as the object-oriented programming language.
 
 SDLC Overview:
-
 
 The chosen Software Development Life Cycle (SDLC) model for the execution of this project is the incremental/agile model. Despite the limitations of the agile model, our team found it to be the best suited option for our requirements and team setup for the following reasons:
 First and foremost, our team decided to follow an iterative approach. With this, planning is incremental and it is easier to change the process as required. Additionally the amount of analysis and documentation that has to be redone is much less than is required for the waterfall model. Lastly, we found that agile methods aligned with our team project management outlooks. Overall, making it the best choice for our team.
@@ -45,13 +42,7 @@ SDLC Breakdown:
         ○ Peer Evaluation: submit a peer evaluation for all team members
         ○ Project Submission: submit the finalized project on Canvas
 
-# Project Phase 2
-
 The second phase of this project focused on improving our already formed code, and adding features that would enhance the functionality of our Chatbot.
-In terms of the project management structures we used to guide us, we decided to follow the same SDLC work cycle, with minor changes. This is because we found the second iteration of the project to put forward similar requirements as the first. Therefore, since our life cycle worked effectively for us last time, it was in our best interest to use it again. Additionally, as this was now our third time working together, it was easy to maintain and perfect the agile process we had been implementing until now.
+In terms of the project management structures we used to guide us, we decided to follow the same SDLC work cycle, with minor changes. 
 
-Regarding the code, the features we decided to apply included: creating a graphical user interface, importing and integrating POS Tagging & Named Entity Recognition Toolkits, as well as configuring the Chatbot to be able to interact with other agents. The reason behind why we picked these aspects was because we had the goal to improve our Chatbot to the point where it could really emulate the feeling of talking to a friend; and found this was our way to  do so.
-
-# Project Phase 3
-
-The third phase of this project was to modify the Chatbot we had created as a group, however this time, the changes were to be done individually. 
+Regarding the code, the features we decided to apply included: creating a graphical user interface, importing and integrating POS Tagging & Named Entity Recognition Toolkits, as well as configuring the Chatbot to be able to interact with other agents. 
