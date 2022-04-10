@@ -659,7 +659,7 @@ public class Bot {
 							  			"\n  \tBefore you go would you like to learn how to say a word in spanish? Just type something, and I'll translate it for you"); 
 					  System.out.print("You: \t");
 					  String translateWord = sc.nextLine().toLowerCase();	
-					  System.out.println("Bot: \t The translation of your word is " + (translate(translateWord)) + "\n  \t It's been great talking to you!");
+					  System.out.println("Bot: \tThe translation of your word is " + (translate(translateWord)) + "\n  \tIt's been great talking to you!");
 					  break;
 				  }
 			
