@@ -42,7 +42,6 @@ SDLC Breakdown:
         ○ Peer Evaluation: submit a peer evaluation for all team members
         ○ Project Submission: submit the finalized project on Canvas
 
-The second phase of this project focused on improving our already formed code, and adding features that would enhance the functionality of our Chatbot.
-In terms of the project management structures we used to guide us, we decided to follow the same SDLC work cycle, with minor changes. 
+Within our second iteration of the project, we decided to follow the same SDLC work cycle, with minor changes. The reasoning behind this is we found the new project requirements were similar to the last, and since our life cycle worked effectively for us last time, it was in our best interest to use it again.
 
-Regarding the code, the features we decided to apply included: creating a graphical user interface, importing and integrating POS Tagging & Named Entity Recognition Toolkits, as well as configuring the Chatbot to be able to interact with other agents. 
+The WBS and Explanation are included within their own file in the Github Repository
