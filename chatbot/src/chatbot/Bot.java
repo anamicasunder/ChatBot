@@ -256,7 +256,7 @@ public class Bot {
                 .build();
         Translate.Translations.List list = translate.new Translations().list(
                 Arrays.asList(s),
-                "ES");
+                "FR");
         list.setKey("AIzaSyAz6qJ6NW4YW_yeq7ziEUazjCWG2prlSHE");
         TranslationsListResponse response = list.execute();
         for (TranslationsResource translationsResource : response.getTranslations())
@@ -331,7 +331,7 @@ public class Bot {
 			}
 			else {
 				Jwiki jwiki = new Jwiki(userLocation); 
-				response = "I haven't been to " + userLocation + " but I've heard tons about it! Some things I know are that:" + "\n" + "\t"+ jwiki.getExtractText(); 
+				response = "I haven't been to " + userLocation + ", but I've heard tons about it! Some things I know are that:" + "\n" + "\t"+ jwiki.getExtractText(); 
 			}
 		}
 		else {
@@ -655,10 +655,10 @@ public class Bot {
 					}
 				  else {
 					  System.out.println("Bot: \t" + "Bye! I had a lot of fun talking to you!" + 
-							  			"\n  \tBefore you go would you like to learn how to say something in spanish? Just type something, and I'll translate it for you"); 
+							  			"\n  \tBefore you go would you like to learn how to say something in my native language french? Just type something, and I'll translate it for you"); 
 					  System.out.print("You: \t");
 					  String translateWord = sc.nextLine().toLowerCase();	
-					  System.out.println("Bot: \tThe translation of is " + (translate(translateWord)) + "\n  \tI'm happy to have taught you something new! \n \tIt's been great talking to you. See you!");
+					  System.out.println("Bot: \tThe translation of is \"" +  (translate(translateWord)) + "\"\n  \tI'm happy to have taught you something new! \n \tIt's been great talking to you. See you!");
 					  break;
 				  }
 			
