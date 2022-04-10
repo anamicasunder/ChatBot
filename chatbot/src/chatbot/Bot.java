@@ -252,7 +252,7 @@ public class Bot {
         Translate translate = new Translate.Builder(
                 GoogleNetHttpTransport.newTrustedTransport()
                 , GsonFactory.getDefaultInstance(), null)
-                .setApplicationName("Stackoverflow-Example")
+                .setApplicationName("Chatbot Translation")
                 .build();
         Translate.Translations.List list = translate.new Translations().list(
                 Arrays.asList(s),
