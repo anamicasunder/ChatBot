@@ -9,6 +9,16 @@ import opennlp.tools.postag.POSTaggerME;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 import opennlp.tools.util.Span;
+import java.io.IOException;
+import java.security.GeneralSecurityException;
+import java.util.Arrays;
+import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.json.gson.GsonFactory;
+import com.google.api.services.translate.Translate;
+import com.google.api.services.translate.model.TranslationsListResponse;
+import com.google.api.services.translate.model.TranslationsResource;
+
+import Jwiki.Jwiki;
 
 public class Bot {
 	
@@ -238,6 +248,25 @@ public class Bot {
 		return response; 
 	}
 	
+	public static String translate(String s) throws IOException, GeneralSecurityException{
+        Translate t = new Translate.Builder(
+                GoogleNetHttpTransport.newTrustedTransport()
+                , GsonFactory.getDefaultInstance(), null)
+                // Set your application name
+                .setApplicationName("Stackoverflow-Example")
+                .build();
+        Translate.Translations.List list = t.new Translations().list(
+                Arrays.asList(s),
+                "ES");
+        list.setKey("AIzaSyAz6qJ6NW4YW_yeq7ziEUazjCWG2prlSHE");
+        TranslationsListResponse response = list.execute();
+        for (TranslationsResource translationsResource : response.getTranslations())
+        {
+            return(translationsResource.getTranslatedText());
+        }
+        return " ";
+    }
+	
 	public static String discussFeeling(String s) throws Exception{
 		
 		String response = "";
@@ -302,7 +331,8 @@ public class Bot {
 				response = "Oh! We live in the same country!"; 
 			}
 			else {
-				response = "I haven't been to " + userLocation + " before, but I hope I could go there one day!"; 
+				Jwiki jwiki = new Jwiki(userLocation); 
+				response = "I haven't been to " + userLocation + " but I've heard tons about it! Some things I know are that:" + "\n" + "\t"+ jwiki.getExtractText(); 
 			}
 		}
 		else {
@@ -625,8 +655,12 @@ public class Bot {
 					s = sc.nextLine().toLowerCase();
 					}
 				  else {
-					  System.out.println("Bot: \t" + endMessage); 
-					  break; 
+					  System.out.println("Bot: \t" + endMessage + 
+							  			"\n  \tBefore you go would you like to learn how to say a word in spanish? Just type something, and I'll translate it for you"); 
+					  System.out.print("You: \t");
+					  String translateWord = sc.nextLine().toLowerCase();	
+					  System.out.println("Bot: \t The translation of your word is " + (translate(translateWord)) + "\n  \t It's been great talking to you!");
+					  break;
 				  }
 			
 		}
