@@ -249,13 +249,12 @@ public class Bot {
 	}
 	
 	public static String translate(String s) throws IOException, GeneralSecurityException{
-        Translate t = new Translate.Builder(
+        Translate translate = new Translate.Builder(
                 GoogleNetHttpTransport.newTrustedTransport()
                 , GsonFactory.getDefaultInstance(), null)
-                // Set your application name
                 .setApplicationName("Stackoverflow-Example")
                 .build();
-        Translate.Translations.List list = t.new Translations().list(
+        Translate.Translations.List list = translate.new Translations().list(
                 Arrays.asList(s),
                 "ES");
         list.setKey("AIzaSyAz6qJ6NW4YW_yeq7ziEUazjCWG2prlSHE");
@@ -655,11 +654,11 @@ public class Bot {
 					s = sc.nextLine().toLowerCase();
 					}
 				  else {
-					  System.out.println("Bot: \t" + endMessage + 
-							  			"\n  \tBefore you go would you like to learn how to say a word in spanish? Just type something, and I'll translate it for you"); 
+					  System.out.println("Bot: \t" + "Bye! I had a lot of fun talking to you!" + 
+							  			"\n  \tBefore you go would you like to learn how to say something in spanish? Just type something, and I'll translate it for you"); 
 					  System.out.print("You: \t");
 					  String translateWord = sc.nextLine().toLowerCase();	
-					  System.out.println("Bot: \tThe translation of your word is " + (translate(translateWord)) + "\n  \tIt's been great talking to you!");
+					  System.out.println("Bot: \tThe translation of is " + (translate(translateWord)) + "\n  \tI'm happy to have taught you something new! \n \tIt's been great talking to you. See you!");
 					  break;
 				  }
 			
